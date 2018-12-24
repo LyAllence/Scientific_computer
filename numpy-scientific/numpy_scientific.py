@@ -45,6 +45,7 @@ class Create_ndarray():
     def some_method(self):
         arr = np.arange(1, 20, 2)
         print('sub ndarray', arr[2:])
+        print("multi bool", arr[(arr > 5) & (arr < 9)])
         # this only can use with one ndim.
         print('specify line', arr[[n,m]])
         print('repeat', arr.repeat(3))
